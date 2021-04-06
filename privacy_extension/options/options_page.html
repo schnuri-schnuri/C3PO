@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <!--<link rel="stylesheet" href="deprec_options_page.css"/>-->
+    <title>ePrivacy Extension Options</title>
+</head>
+
+<body>
+
+<label for="settings-select">Please choose which settings you want to view or change.</label>
+<select id="settings-select">
+    <option value="general" selected="selected">General Settings</option>
+</select>
+
+<div id="settings-placeholder">
+    <iframe id="settingsIframe" src="/privacy_settings/privacy_settings.html" name="general" style="overflow: visible; border: 0; padding: 0;" height="800px" width="600px"></iframe>
+</div>
+
+<button id="deleteButton">Delete all settings</button>
+<script src="options_page.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ePrivacy Extension Popup</title>
+</head>
+<body>
+    <div id="tabHeader">
+        <button id="websiteSettingsTab">This Website</button>
+        <button id="generalSettingsTab">General Settings</button>
+    </div>
+
+    <div id="websiteSettingsContainer">
+        <h1>Settings for <span id="websiteHost"></span></h1>
+        <iframe id="websiteSettingIframe" src="/privacy_settings/privacy_settings.html" name="" style="overflow: visible; border: 0; padding: 0;" height="850px" width="600px"></iframe>
+    </div>
+    <div id="generalSettingsContainer">
+        <h1>General settings</h1>
+        <iframe src="/privacy_settings/privacy_settings.html" name="general" style="overflow: visible; border: 0; padding: 0;" height="850px" width="600px"></iframe>
+    </div>
+    <div>
+        <input id="do_not_ask_again_checkbox" type="checkbox">
+        <label for="do_not_ask_again_checkbox">Do not show consent requests by this website.</label>
+    </div>
+    <script src="popup.js" type="module"></script>
+    <script src="tabs.js"></script>
+</body>
+</html>
